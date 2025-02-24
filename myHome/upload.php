@@ -6,8 +6,7 @@
   	  $fileF = md5($_FILES['file']['name']);
   	  $target_file = $target_directory.basename(md5($_FILES["file"]["name"]));   //name is to get the file name of uploaded file
   	 // $dir = md5($target_file);
-  	  $filetype = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-  	
+  	  $filetype = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));	
   	if (file_exists($target_file)) {
   		echo "<script>alert('The file uploading already exist Click ok to avoid file doplicate');window.location.href='index.php';</script>";
   	}else{
@@ -23,7 +22,6 @@
 			}
 		}
   	}
-  	
   	  //move_uploaded_file($_FILES["file"]["tmp_name"],$newfilename);   // tmp_name is the file temprory stored in the server
   	 /*if (!file_exists($filetype)) {
   	 	 echo 1;
@@ -33,8 +31,4 @@
   	 }*/
   	  //Now to check if uploaded or not
     }
-
-  
-
-
  ?>

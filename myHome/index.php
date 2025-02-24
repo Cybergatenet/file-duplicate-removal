@@ -3,7 +3,6 @@
 require('../connect.php');
 ?>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,7 +19,6 @@ require('../connect.php');
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-
 <body>
     <div class="wrapper">
         <nav id="sidebar" class="active">
@@ -38,9 +36,7 @@ require('../connect.php');
                 </li>
                 <li>
                     <a href="logout.php"><i class="fas fa-table"></i> Logout</a>
-                </li>
-                
-                               
+                </li>              
             </ul>
         </nav>
         <div id="body" class="active">
@@ -63,7 +59,6 @@ require('../connect.php');
                   alert('Deleted successful');
                   window.location.href='index.php';
                 </script>";
-                 
                }
               }
                ?>
@@ -77,13 +72,11 @@ require('../connect.php');
                         $sql= mysqli_query($con,"SELECT * FROM form_data");
                         if(mysqli_num_rows($sql) > 0){
                          ?>
-                        
                             <tr>
                               <th>S/N</th>
                                 <th>File Name</th>
                                 <th>Checksum</th>
                                 <th>Action</th>
-                                
                             </tr>
                            <?php
                               while($data = mysqli_fetch_assoc($sql)){
