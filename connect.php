@@ -3,4 +3,7 @@
   if ($con) {
   	//echo "yes";
   }
+
+  if (!$con) throw new Exception("Error Processing Request", 1);
+  
 ?>

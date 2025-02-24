@@ -30,9 +30,9 @@ Ensure you have the following installed on your server:
    - Update the `config.php` file with your database credentials:
      ```php
      define('DB_HOST', 'localhost');
-     define('DB_USER', 'your_username');
-     define('DB_PASS', 'your_password');
-     define('DB_NAME', 'your_database');
+     define('DB_USER', 'root');
+     define('DB_PASS', '');
+     define('DB_NAME', 'peace');
      ```
 
 3. **Run the system:**

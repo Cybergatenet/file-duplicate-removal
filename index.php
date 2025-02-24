@@ -26,10 +26,8 @@ if (isset($_POST['btns'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	
+	<title>File Duplicate Removal | Home page</title>	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
 </head>
 <body>
 <div class="container">
